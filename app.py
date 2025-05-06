@@ -1,9 +1,19 @@
 from flask import Flask, render_template
+from flask import request
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.route('/sign_up', methods=['GET', 'POST'])
+def sign_up():
+    if request.method == 'POST':
+        userame = request.form['username']
+        email = request.form['email']
+        password = request.form['password']
+        print(f"Username: {userame}, Email: |{email}, Password: {password}")
+    return render_template('sign_up.html', title="Региисрация")
 
 app.run(debug=True)
