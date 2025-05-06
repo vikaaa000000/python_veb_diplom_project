@@ -1,9 +1,9 @@
 
 
-def add_user(username, emal, password):
+def add_user(username, email, password):
     
     conn = sqlite3.connect('gallery.db')
-    cursor = con.cursor()
+    cursor = conn.cursor()
     sql = "INSERT INTO user (username, email, password) VALUES(?, ?, ?)"
     cursor.execute(sql(username, email, password))
     conn.commit()
