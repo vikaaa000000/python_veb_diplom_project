@@ -33,6 +33,12 @@ body {
     border-radius: 35px;
     margin-left: 20px;
 }
+.photo5{
+    height: 500px;
+    width: 600px;
+    border-radius: 35px;
+    margin-left: 20px;
+}
 .my-container{
     display: flex;
     justify-content: space-around;
@@ -50,6 +56,17 @@ body {
 .d{
     display: flex;
     justify-content: space-around;
-    margin: 50px;
-    font-size: 30px;
+    margin: 40px;
+    font-size: 25px;
+}
+.f{
+    display: flex;
+    justify-content:center
+    
+}
+.d2{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    font-size: 25px;
 }

@@ -1,0 +1,11 @@
+.f{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    height: 88vh;
+}
+
+form .form-floating{
+    margin-top: 15px;
+}

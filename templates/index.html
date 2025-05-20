@@ -14,8 +14,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
-  <header
-    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <div class="col-md-3 mb-2 mb-md-0">
       <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
         <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
@@ -25,16 +24,15 @@
     </div>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-      <li><a href="#" class="nav-link px-2">Features</a></li>
-      <li><a href="#" class="nav-link px-2">Pricing</a></li>
-      <li><a href="#" class="nav-link px-2">FAQs</a></li>
-      <li><a href="#" class="nav-link px-2">About</a></li>
+      <li><a href="#" class="nav-link px-2 link-secondary">Главная</a></li>
+      <li><a href="#" class="nav-link px-2">Изделия</a></li>
+      <li><a href="#" class="nav-link px-2">Задать вопрос</a></li>
+      <li><a href="#" class="nav-link px-2">О нас</a></li>
     </ul>
 
     <div class="col-md-3 text-end">
-      <button type="button" class="btn btn-outline-primary me-2">Login</button>
-      <button type="button" class="btn btn-secondary">Secondary</button>
+      <a href="{{url_for('sign_up')}}"><button type="button" class="btn btn-outline-primary me-2">Зарегистрироваться</button></a>
+      <button type="button" class="btn btn-secondary">Войти</button>
     </div>
   </header>
 
@@ -53,6 +51,9 @@
         людьми, которые разделяют страсть и любовь к вязанию.
       </p>
     </div>
+    <div>
+      
+    </div>
     <div class="photos">
       <img class="photo2" src="static/шапка.jpg">
       <img class="photo3" src="static/носки.jpg">
@@ -60,10 +61,22 @@
       
     </div>
     <div class="d">
-        <p> Шапка спицами</p>
-        <p> Носки спицами</p>
-        <p> Сердца крючком</p></div>
+        <a href="https://dzen.ru/a/ZXD28_yuazkoMDKq">Шапка спицами</a>
+        <a href="https://www.cityarn.ru/blogs/articles/kak-svyazat-noski-spicami">Носки спицами</a>
+        <a href="https://zhurnal.rykodelniza.ru/vyazanye-serdechki-33-sxemy-i-opisaniya-vyazanie-kryuchkom/">Сердца крючком</a>
+        
+    </div>
+    <div class="photos">
+      <img class="photo5" src="static/змея.jpg">
+      <img class="photo5" src="static/зайка.jpg">
+      <img class="photo5" src="static/коала.jpg">
+    </div>
     
+    <div class="d2">
+        <a href="https://amigurumi-portal.ru/katalog-skhem/reptilii-i-amfibii/zmei/p4300-zmeyka">Змея крючком</a>
+        <a href="https://www.livemaster.ru/topic/3404388-masterclass-vyazhem-kryuchkom-plyushevogo-zajchika-puhlyasha?ysclid=mavzfub4yq932544046">Зайка крючком</a>
+        <a href="https://amimore.ru/koala-4513">Коала крючком</a>
+    </div>
   </main>
 </body>
 
